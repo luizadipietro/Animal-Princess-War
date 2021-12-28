@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 79231cf00d2466740b692d31ceffcd14
 ModelImporter:
-  serializedVersion: 19300
+  serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
@@ -11,7 +11,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Princess_MAT
-    second: {fileID: 2100000, guid: 72c83af54c9e0c24e93fde71ab8c497f, type: 2}
+    second: {fileID: 2100000, guid: 9ba71c276c64abb4d95ac35d9c6d917b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -51,11 +51,13 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -65,6 +67,9 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -76,7 +81,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human:
@@ -497,13 +502,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Princess3(Clone)
+    - name: Princess 1(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Character1_Reference
-      parentName: Princess3(Clone)
+      parentName: Princess 1(Clone)
       position: {x: -0, y: 0, z: 0.0000000012162994}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -541,6 +546,11 @@ ModelImporter:
       parentName: CH_Neck
       position: {x: -3.1664968e-10, y: 0.06832092, z: 0.0018650817}
       rotation: {x: -0.02491002, y: -2.0127575e-22, z: -5.0153394e-24, w: 0.9996897}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tiara
+      parentName: CH_Head
+      position: {x: -0.00007873398, y: 0.37712714, z: 0.10194793}
+      rotation: {x: 0.17364863, y: -0, z: -0, w: 0.98480767}
       scale: {x: 1, y: 1, z: 1}
     - name: CH_Shou_L
       parentName: CH_UpperChest
@@ -634,7 +644,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: CH_FingerTh2_L
       parentName: CH_FingerTh1_L
-      position: {x: -0.0304364, y: -0.0048421477, z: -0.00051071163}
+      position: {x: -0.086, y: -0.071, z: -0.064}
       rotation: {x: 0.0065150596, y: -0.009020416, z: -0.021718824, w: 0.9997022}
       scale: {x: 1, y: 1, z: 1}
     - name: CH_Shou_R
@@ -715,8 +725,7 @@ ModelImporter:
     - name: CH_FingerR2_R
       parentName: CH_FingerR1_R
       position: {x: 0.0271566, y: 0, z: 0.00000006198883}
-      rotation: {x: -0.000000003725404, y: -0.000000059604645, z: -2.2205138e-16,
-        w: 1}
+      rotation: {x: -0.000000003725404, y: -0.000000059604645, z: -2.2205138e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CH_FingerTh0_R
       parentName: CH_Hand_R
@@ -774,7 +783,7 @@ ModelImporter:
       rotation: {x: -0.51408297, y: 0.49325505, z: 0.5182623, w: 0.47309878}
       scale: {x: 1, y: 1, z: 1}
     - name: Princess
-      parentName: Princess3(Clone)
+      parentName: Princess 1(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -795,6 +804,7 @@ ModelImporter:
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
